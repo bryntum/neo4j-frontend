@@ -12,7 +12,10 @@ const project = new ProjectModel({
   autoSync: true,
   transport: {
     load: {
-      url: "data.json",
+      url: "http://localhost:3000/load",
+    },
+    sync: {
+      url: "http://localhost:3000/sync",
     },
   },
 
